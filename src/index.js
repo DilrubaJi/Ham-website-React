@@ -1,34 +1,28 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import {
+  BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
-  HashRouter
-} from 'react-router-dom';
+} from 'react-router-dom'
 
 import './style.css'
 import Home from './views/home'
 import NotFound from './views/not-found'
 
-class App extends Component {
-  componentDidMount() {}
-  render() {
-    return (
+const basename = process.env.PUBLIC_URL; // Set the basename to the public URL
+
+const App = () => {
+  return (
+    <Router basename={basename}>
       <Switch>
         <Route component={Home} exact path="/" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
-    );
-  }
+    </Router>
+  )
 }
 
-ReactDOM.render(
-  <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </React.StrictMode>,
-  document.getElementById('app')
-);
+ReactDOM.render(<App />, document.getElementById('app'));

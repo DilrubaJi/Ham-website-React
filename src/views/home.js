@@ -1,12 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
-import Script from 'dangerous-html/react'
-import { Helmet } from 'react-helmet'
-
-import Features from '../components/features'
-import Practice from '../components/practice'
-import './home.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Script from 'dangerous-html/react';
+import { Helmet } from 'react-helmet';
+import Features from '../components/features';
+import Practice from '../components/practice';
+import './home.css';
 
 const Home = (props) => {
   return (
@@ -145,8 +143,8 @@ const Home = (props) => {
         <header data-thq="thq-navbar" className="home-navbar">
           <div className="home-left">
             <img
-              alt="image"
-              src="/mth%2Blight%2Bblue%2Bwith%2Bred%2Bdot%2B(2)-1500h.png"
+              alt="image1"
+              src={process.env.PUBLIC_URL + '/MTH-logo.png'}
               className="home-image06"
             />
             <nav className="home-links">
@@ -159,7 +157,7 @@ const Home = (props) => {
             <button className="home-phone button">
               <img
                 alt="image"
-                src="/Icons/phone.svg"
+                src={process.env.PUBLIC_URL + '/Icons/phone.svg'}
                 className="home-image07"
               />
               <span className="home-text06">07843 900 547</span>
@@ -366,8 +364,8 @@ const Home = (props) => {
         <div className="home-left1">
           <div className="home-brand">
             <img
-              alt="image"
-              src="/mth%2Blight%2Bblue%2Bwith%2Bred%2Bdot%2B(2)-1500h.png"
+              alt="image2"
+              src="/MTH-logo.png"
               className="home-image14"
             />
             <p className="home-text24">
