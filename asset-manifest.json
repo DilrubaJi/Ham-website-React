@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Ham-website-React/static/css/main.f5c59830.css",
+    "main.js": "/Ham-website-React/static/js/main.ab77999f.js",
+    "index.html": "/Ham-website-React/index.html",
+    "main.f5c59830.css.map": "/Ham-website-React/static/css/main.f5c59830.css.map",
+    "main.ab77999f.js.map": "/Ham-website-React/static/js/main.ab77999f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5c59830.css",
+    "static/js/main.ab77999f.js"
+  ]
+}
