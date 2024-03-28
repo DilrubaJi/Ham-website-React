@@ -12,7 +12,7 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Ham-website</title>
+        <title>MultiTechHomes</title>
         <meta
           name="description"
           content="We offer an affordable, high quality service in each of the following areas:\nProperty Renovations\nExtensions and Loft Conversions\nDamp Proofing\nPlumbing"
